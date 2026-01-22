@@ -1,1 +1,2 @@
 # EV_CHARGING_STATIONS_ANALYSIS
+This project investigates whether New Zealand’s electric vehicle (EV) charging infrastructure has kept pace with the growth of electric vehicles over recent years, and whether charging stations are logically placed to meet demand. By integrating the Motor Vehicle Register and EV Roam Charging Stations datasets from data.govt.nz, the analysis compares trends in EV registrations against the expansion and geographic distribution of public charging stations nationwide.
