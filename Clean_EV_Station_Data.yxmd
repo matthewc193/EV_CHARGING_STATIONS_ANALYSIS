@@ -1,0 +1,652 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="966" y="54" width="325" height="235" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Format Charging Stations</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Format Charging Stations</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="29">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="991" y="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="DateTimeParse([dateFirstOperational], &quot;%e/%m/%Y&quot;)" field="dateFirstOperational" size="2048" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[dateFirstOperational = DateTimeParse([dateFirstOperational], "%e/%m/%Y")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1099" y="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" size="2048" />
+                <SelectField field="carParkCount" selected="True" rename="CARPARK_COUNT" />
+                <SelectField field="connectorsList" selected="False" rename="CONNECTORS_LIST" />
+                <SelectField field="currentType" selected="True" rename="CURRENT_TYPE" />
+                <SelectField field="dateFirstOperational" selected="True" rename="DATE_FIRST_OPERATIONAL" />
+                <SelectField field="GlobalID" selected="True" rename="GLOBAL_ID" />
+                <SelectField field="hasCarparkCost" selected="True" rename="HAS_CARPARK_COST" />
+                <SelectField field="hasChargingCost" selected="True" rename="HAS_CHARGING_COST" />
+                <SelectField field="hasTouristAttraction" selected="True" rename="HAS_TOURIST_ATTRACTION" />
+                <SelectField field="is24Hours" selected="True" rename="IS_24_HOURS" />
+                <SelectField field="latitude" selected="True" rename="LATITUDE" />
+                <SelectField field="longitude" selected="True" rename="LONGITUDE" />
+                <SelectField field="maxTimeLimit" selected="True" rename="MAX_TIME_LIMIT" />
+                <SelectField field="numberOfConnectors" selected="True" rename="NUMBER_OF_CONNECTORS" />
+                <SelectField field="OBJECTID" selected="True" rename="OBJECT_ID" />
+                <SelectField field="Type" selected="True" rename="TYPE" />
+                <SelectField field="connectorsList1" selected="False" />
+                <SelectField field="connectorsList2" selected="False" />
+                <SelectField field="connectorsList3" selected="False" />
+                <SelectField field="connectorsList4" selected="False" />
+                <SelectField field="connectorsList5" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="1207" y="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="ID" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="966" y="306" width="313" height="250" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Format Connectors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Format Connectors</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="991" y="365" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="ID" selected="True" rename="Site_ID" size="2048" />
+                <SelectField field="connectorsList1" selected="True" rename="CURRENT_TYPE" />
+                <SelectField field="connectorsList2" selected="True" rename="POWER_KW" />
+                <SelectField field="connectorsList3" selected="True" rename="CONNECTOR_TYPE" />
+                <SelectField field="connectorsList4" selected="True" rename="STATUS" />
+                <SelectField field="connectorsList5" selected="True" rename="COUNT" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1099" y="365" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="TRIM(REPLACE([status], &quot;Status: &quot;, &quot;&quot;))" field="STATUS" size="2048" type="V_WString" enabled="true" />
+                <FormulaField expression="TRIM(REPLACE(count, &quot;Count:&quot;, &quot;&quot;))" field="COUNT" size="2048" type="V_WString" enabled="true" />
+                <FormulaField expression="TRIM(REPLACE([POWER_KW], &quot; kW&quot;, &quot;&quot;))" field="POWER_KW" size="2048" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>STATUS = TRIM(REPLACE([status], "Status: ", ""))
+COUNT = TRIM(REPLACE(count, "Co...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="1195" y="365" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>CONNECTOR_ID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+              <GroupFields orderChanged="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="174" width="169" height="190" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="54">C:\Users\mcroc\FIRN_case_study\EV_Roam_charging_stations_data.json</File>
+              <FormatSpecificOptions>
+                <SingleField>True</SingleField>
+                <ReadStructured>False</ReadStructured>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>EV_Roam_charging_stations_data.json</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="JSON_Name" size="1073741823" source="JSON_Input" type="V_WString" />
+                <Field name="JSON_ValueString" size="1073741823" source="JSON_Input" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="246" y="173" width="313" height="144" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Reformat JSON</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Reformat JSON</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="271" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>JSON_Name</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>JSON_Name</RootName>
+              <Delimeters value="." />
+              <NumFields value="2" />
+              <Mode value="Columns" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="378" y="232" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="JSON_ValueString" selected="True" rename="Value" />
+                <SelectField field="JSON_Name1" selected="True" rename="ID" />
+                <SelectField field="JSON_Name2" selected="True" rename="Header" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+            <Position x="475" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <GroupFields>
+                <Field field="ID" />
+              </GroupFields>
+              <HeaderField field="Header" />
+              <DataField field="Value" />
+              <Methods>
+                <Method method="Concat" />
+                <Separator>,</Separator>
+                <FieldSize value="2048" />
+              </Methods>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field description="TextToColumns: Parsed from JSON_Name" name="ID" size="1073741823" source="CrossTab:Group:Concat:" type="V_WString" />
+                <Field name="ADDRESS" size="2048" source="CrossTab:Header:Header:ADDRESS:Concat:" type="V_WString" />
+                <Field name="carParkCount" size="2048" source="CrossTab:Header:Header:carParkCount:Concat:" type="V_WString" />
+                <Field name="connectorsList" size="2048" source="CrossTab:Header:Header:connectorsList:Concat:" type="V_WString" />
+                <Field name="currentType" size="2048" source="CrossTab:Header:Header:currentType:Concat:" type="V_WString" />
+                <Field name="dateFirstOperational" size="2048" source="CrossTab:Header:Header:dateFirstOperational:Concat:" type="V_WString" />
+                <Field name="GlobalID" size="2048" source="CrossTab:Header:Header:GlobalID:Concat:" type="V_WString" />
+                <Field name="hasCarparkCost" size="2048" source="CrossTab:Header:Header:hasCarparkCost:Concat:" type="V_WString" />
+                <Field name="hasChargingCost" size="2048" source="CrossTab:Header:Header:hasChargingCost:Concat:" type="V_WString" />
+                <Field name="hasTouristAttraction" size="2048" source="CrossTab:Header:Header:hasTouristAttraction:Concat:" type="V_WString" />
+                <Field name="is24Hours" size="2048" source="CrossTab:Header:Header:is24Hours:Concat:" type="V_WString" />
+                <Field name="latitude" size="2048" source="CrossTab:Header:Header:latitude:Concat:" type="V_WString" />
+                <Field name="longitude" size="2048" source="CrossTab:Header:Header:longitude:Concat:" type="V_WString" />
+                <Field name="maxTimeLimit" size="2048" source="CrossTab:Header:Header:maxTimeLimit:Concat:" type="V_WString" />
+                <Field name="NAME" size="2048" source="CrossTab:Header:Header:NAME:Concat:" type="V_WString" />
+                <Field name="numberOfConnectors" size="2048" source="CrossTab:Header:Header:numberOfConnectors:Concat:" type="V_WString" />
+                <Field name="OBJECTID" size="2048" source="CrossTab:Header:Header:OBJECTID:Concat:" type="V_WString" />
+                <Field name="OPERATOR" size="2048" source="CrossTab:Header:Header:OPERATOR:Concat:" type="V_WString" />
+                <Field name="OWNER" size="2048" source="CrossTab:Header:Header:OWNER:Concat:" type="V_WString" />
+                <Field name="Type" size="2048" source="CrossTab:Header:Header:Type:Concat:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="594" y="174" width="312" height="250" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Separate Connectors</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Separate Connectors</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="619" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Replace(Replace([GlobalID], &quot;{&quot;, &quot;&quot;), &quot;}&quot;, &quot;&quot;)&#xA;" field="GlobalID" size="2048" type="V_WString" enabled="true" />
+                <FormulaField expression="REPLACE([connectorsList], &quot;},{&quot;, &quot;|&quot;)&#xA;" field="connectorsList" size="2048" type="V_WString" enabled="true" />
+                <FormulaField expression="REGEX_Replace([connectorsList], &quot;[{}]&quot;, &quot;&quot;)&#xA;" field="connectorsList" size="2048" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>GlobalID = Replace(Replace([GlobalID], "{", ""), "}", "")
+
+connectorsList = REPL...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="715" y="233" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>connectorsList</Field>
+              <Delimeters value="|" />
+              <NumFields value="3" />
+              <Mode value="Rows" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+            <Position x="822" y="234" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Field>connectorsList</Field>
+              <ErrorHandling>Last</ErrorHandling>
+              <RootName>connectorsList</RootName>
+              <Delimeters value="," />
+              <NumFields value="5" />
+              <Mode value="Columns" />
+              <Flags value="0" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1326" y="54" width="253" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output to Snowflake</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output to Snowflake</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1351" y="113" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>EV_CHARGING_STATIONS</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId" DcmTitle="EV_ANALYSIS — matthewcro" DcmSchemaId="database-odbc-dsn-snowflake">c4bd17f5-b001-4ecb-9271-bc4e0534a50b</Connection>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:EV_ANALYSIS — matthewcro
+Table=EV_CHARGING_STATIONS</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1314" y="306" width="253" height="205" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output to Snowflake</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output to Snowflake</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="1339" y="365" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File />
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions UseDcm="true" MaxRecords="" Format="23">
+                <TableStyle>Quoted</TableStyle>
+                <TransactionMessages>False</TransactionMessages>
+                <Table>EV_CONNECTORS</Table>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <OutputOption>Overwrite</OutputOption>
+                <Connection DcmType="ConnectionId" DcmTitle="EV_ANALYSIS — matthewcro" DcmSchemaId="database-odbc-dsn-snowflake">c4bd17f5-b001-4ecb-9271-bc4e0534a50b</Connection>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>dcm:EV_ANALYSIS — matthewcro
+Table=EV_CONNECTORS</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="34" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Unique" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Clean_EV_Station_Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a68d48f1-f93c-4109-9a73-594e15e9b563" />
+      <Telemetry>
+        <PreviousWorkflowId value="063b2098-91d0-48d1-ac5f-bac59d3ac18a" />
+        <OriginWorkflowId value="063b2098-91d0-48d1-ac5f-bac59d3ac18a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="29" y="115" width="169" height="175" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Input Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="54" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="0">C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv</File>
+              <FormatSpecificOptions>
+                <CodePage>65001</CodePage>
+                <Delimeter>,</Delimeter>
+                <IgnoreErrors>False</IgnoreErrors>
+                <FieldLen>254</FieldLen>
+                <AllowShareWrite>False</AllowShareWrite>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Motor_Vehicle_Register_API_dt.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="OBJECTID" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="ALTERNATIVE_MOTIVE_POWER" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="BASIC_COLOUR" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="BODY_TYPE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="CC_RATING" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="CHASSIS7" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="CLASS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="ENGINE_NUMBER" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="FIRST_NZ_REGISTRATION_YEAR" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="FIRST_NZ_REGISTRATION_MONTH" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="GROSS_VEHICLE_MASS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="HEIGHT" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="IMPORT_STATUS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="INDUSTRY_CLASS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="INDUSTRY_MODEL_CODE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="MAKE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="MODEL" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="MOTIVE_POWER" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="MVMA_MODEL_CODE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="NUMBER_OF_AXLES" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="NUMBER_OF_SEATS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="NZ_ASSEMBLED" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="ORIGINAL_COUNTRY" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="POWER_RATING" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="PREVIOUS_COUNTRY" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="ROAD_TRANSPORT_CODE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="SUBMODEL" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="TLA" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="TRANSMISSION_TYPE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="VDAM_WEIGHT" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="VEHICLE_TYPE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="VEHICLE_USAGE" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="VEHICLE_YEAR" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="VIN11" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="WIDTH" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="SYNTHETIC_GREENHOUSE_GAS" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="FC_COMBINED" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="FC_URBAN" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+                <Field name="FC_EXTRA_URBAN" size="254" source="File: C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_API_dt.csv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="245" y="115" width="205" height="250" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Clean Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Clean Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="270" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="Round(ToNumber([FIRST_NZ_REGISTRATION_YEAR]), 1)" field="FIRST_NZ_REGISTRATION_YEAR" size="254" type="V_WString" enabled="true" />
+                <FormulaField expression="Round(ToNumber([FIRST_NZ_REGISTRATION_MONTH]), 1)" field="FIRST_NZ_REGISTRATION_MONTH" size="254" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>FIRST_NZ_REGISTRATION_YEAR = Round(ToNumber([FIRST_NZ_REGISTRATION_YEAR]), 1)
+FI...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="366" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="NUMBER_OF_AXLES" selected="True" type="Int16" size="2" />
+                <SelectField field="BASIC_COLOUR" selected="True" type="V_String" size="16777216" />
+                <SelectField field="BODY_TYPE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="CC_RATING" selected="True" type="Int32" size="4" />
+                <SelectField field="CHASSIS7" selected="True" type="V_String" size="16777216" />
+                <SelectField field="CLASS" selected="True" rename="VEHICLE_CLASS" type="V_String" size="16777216" />
+                <SelectField field="ENGINE_NUMBER" selected="True" type="V_String" size="16777216" />
+                <SelectField field="FIRST_NZ_REGISTRATION_YEAR" selected="True" type="Int16" size="2" />
+                <SelectField field="ALTERNATIVE_MOTIVE_POWER" selected="True" type="V_String" size="16777216" />
+                <SelectField field="FIRST_NZ_REGISTRATION_MONTH" selected="True" type="Int16" size="2" />
+                <SelectField field="HEIGHT" selected="True" type="V_String" size="16777216" />
+                <SelectField field="IMPORT_STATUS" selected="True" type="V_String" size="16777216" />
+                <SelectField field="INDUSTRY_CLASS" selected="True" type="V_String" size="16777216" />
+                <SelectField field="INDUSTRY_MODEL_CODE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="MAKE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="MODEL" selected="True" type="V_String" size="16777216" />
+                <SelectField field="MOTIVE_POWER" selected="True" type="V_String" size="16777216" />
+                <SelectField field="GROSS_VEHICLE_MASS" selected="True" type="Float" size="4" />
+                <SelectField field="MVMA_MODEL_CODE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="NUMBER_OF_SEATS" selected="True" type="Int16" size="2" />
+                <SelectField field="ORIGINAL_COUNTRY" selected="True" type="V_String" size="16777216" />
+                <SelectField field="POWER_RATING" selected="True" type="Int16" size="2" />
+                <SelectField field="PREVIOUS_COUNTRY" selected="True" type="V_String" size="16777216" />
+                <SelectField field="ROAD_TRANSPORT_CODE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="SUBMODEL" selected="True" type="V_String" size="16777216" />
+                <SelectField field="TLA" selected="True" type="V_String" size="16777216" />
+                <SelectField field="TRANSMISSION_TYPE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="NZ_ASSEMBLED" selected="True" type="V_String" size="16777216" />
+                <SelectField field="VDAM_WEIGHT" selected="True" type="Int32" size="4" />
+                <SelectField field="VEHICLE_USAGE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="VEHICLE_YEAR" selected="True" type="Int16" size="2" />
+                <SelectField field="VIN11" selected="True" type="V_String" size="16777216" />
+                <SelectField field="WIDTH" selected="True" type="Int32" size="4" />
+                <SelectField field="SYNTHETIC_GREENHOUSE_GAS" selected="True" type="V_String" size="16777216" />
+                <SelectField field="FC_COMBINED" selected="True" type="Float" size="4" />
+                <SelectField field="FC_URBAN" selected="True" type="Float" size="4" />
+                <SelectField field="VEHICLE_TYPE" selected="True" type="V_String" size="16777216" />
+                <SelectField field="FC_EXTRA_URBAN" selected="True" type="Float" size="4" />
+                <SelectField field="OBJECTID" selected="True" type="Int64" size="8" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="509" y="115" width="184" height="190" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output Data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output Data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="534" y="174" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="0">C:\Users\mcroc\FIRN_case_study\Motor_Vehicle_Register_Cleaned.csv</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <LineEndStyle>CRLF</LineEndStyle>
+                <Delimeter>,</Delimeter>
+                <ForceQuotes>False</ForceQuotes>
+                <HeaderRow>True</HeaderRow>
+                <CodePage>28591</CodePage>
+                <WriteBOM>True</WriteBOM>
+                <SuppressBlankFile>False</SuppressBlankFile>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Motor_Vehicle_Register_Cleaned.csv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Clean_Vehicle_Register_Data</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="29bc2f75-727a-4528-bef2-8230ff87989d" />
+      <Telemetry>
+        <PreviousWorkflowId value="d451f0e6-f21e-468c-a401-259f111762d1" />
+        <OriginWorkflowId value="d451f0e6-f21e-468c-a401-259f111762d1" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
