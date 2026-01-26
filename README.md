@@ -3,5 +3,8 @@ This project investigates whether New Zealand’s electric vehicle (EV) charging
 
 This project implements a full end-to-end data pipeline, using Alteryx to ingest, clean, and reformat raw JSON data, and Snowflake as a data warehouse for data modeling and analytics. The data is imported into Power BI and delivers an interactive Power BI dashboard presenting key metrics such as EVs per charging connector, with the ability to filter by date and Territorial Local Authority (TLA). 
 
+![Alt text for the image](Dashboard_Screenshot.png)
+
+
 
 
